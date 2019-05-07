@@ -192,6 +192,14 @@
                 "<i class='icofont-rounded-right'></i>"
             ],
         });
+        $('[data-toggle="tooltip"][data-placement="bottom"]').tooltip({ trigger: "hover" });
+        $('[data-toggle="tooltip"][data-placement="right"]').tooltip({ trigger: "hover" });
+        $('[data-toggle="tooltip"]').click(function () {
+            $('[data-toggle="tooltip"]').tooltip("hide");
+         });
+         $('[data-toggle="tooltip"][data-placement="right"]').hover(function () {
+            $('[data-toggle="tooltip"][data-placement="bottom"]').tooltip("hide");
+         });
         
         // Check distance to top and display back-to-top.
         jQuery( window ).on('scroll', function() {
