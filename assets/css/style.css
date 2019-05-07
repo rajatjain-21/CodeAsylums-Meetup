@@ -4735,7 +4735,12 @@ Back To Top CSS
   bottom: 1.25%;
   visibility: visible;
 }
-
+.filler-img {
+  position: absolute;
+  top: 0;
+  right: -400px;
+  border-radius: 1%;
+}
 .intro {
   background: #F45B69;
   padding: 50px 0;
